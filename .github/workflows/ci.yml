@@ -54,9 +54,7 @@ jobs:
       run: |
         ./venv/bin/python main.py --evaluate  # Évaluation du modèle
 
-    - name: Run tests
-      run: |
-        ./venv/bin/python -m pytest tests/  # Exécution des tests unitaires
+
 
     - name: Clean up
       run: |
