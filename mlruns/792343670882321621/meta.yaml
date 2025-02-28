@@ -1,0 +1,6 @@
+artifact_location: file:///home/amena/maktouf-amena-4DS5-mlops_projet/mlruns/792343670882321621
+creation_time: 1740737140828
+experiment_id: '792343670882321621'
+last_update_time: 1740737140828
+lifecycle_stage: active
+name: Prediction_Churn_ML

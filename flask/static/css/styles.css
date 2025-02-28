@@ -1,0 +1,97 @@
+/* Appliquer une police plus moderne */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Formulaire */
+form {
+    text-align: left;
+}
+
+/* Fieldset pour mieux regrouper les champs */
+fieldset {
+    border: none;
+    padding: 10px;
+}
+
+/* Légende du fieldset */
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Labels et inputs */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Bouton stylisé */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Résultat de la prédiction */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Mise en valeur des prédictions */
+.safe {
+    color: green;
+    font-weight: bold;
+}
+
+.alert {
+    color: red;
+    font-weight: bold;
+}
+
+.warning {
+    color: orange;
+    font-weight: bold;
+}

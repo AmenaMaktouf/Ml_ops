@@ -1,0 +1,15 @@
+artifact_uri: file:///home/amena/maktouf-amena-4DS5-mlops_projet/mlruns/792343670882321621/eec0b1a87d9b4f0d8d37b8f6213109c4/artifacts
+end_time: 1740738343230
+entry_point_name: ''
+experiment_id: '792343670882321621'
+lifecycle_stage: active
+run_id: eec0b1a87d9b4f0d8d37b8f6213109c4
+run_name: enchanting-koi-757
+run_uuid: eec0b1a87d9b4f0d8d37b8f6213109c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740738341118
+status: 3
+tags: []
+user_id: amena

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1740737527128
+current_stage: None
+description: null
+last_updated_timestamp: 1740737527128
+name: churn_prediction_model
+run_id: null
+run_link: null
+source: file:///home/amena/maktouf-amena-4DS5-mlops_projet/mlruns/792343670882321621/acdd08ef4b6948f3b33c04190c1c629a/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///home/amena/maktouf-amena-4DS5-mlops_projet/mlruns/792343670882321621/acdd08ef4b6948f3b33c04190c1c629a/artifacts/model
+user_id: null
+version: 3

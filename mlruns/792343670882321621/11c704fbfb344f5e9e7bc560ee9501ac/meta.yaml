@@ -1,0 +1,15 @@
+artifact_uri: file:///home/amena/maktouf-amena-4DS5-mlops_projet/mlruns/792343670882321621/11c704fbfb344f5e9e7bc560ee9501ac/artifacts
+end_time: 1740737971102
+entry_point_name: ''
+experiment_id: '792343670882321621'
+lifecycle_stage: active
+run_id: 11c704fbfb344f5e9e7bc560ee9501ac
+run_name: useful-crow-214
+run_uuid: 11c704fbfb344f5e9e7bc560ee9501ac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740737968890
+status: 4
+tags: []
+user_id: amena

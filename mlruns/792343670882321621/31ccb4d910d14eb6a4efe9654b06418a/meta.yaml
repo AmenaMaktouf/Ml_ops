@@ -1,0 +1,15 @@
+artifact_uri: file:///home/amena/maktouf-amena-4DS5-mlops_projet/mlruns/792343670882321621/31ccb4d910d14eb6a4efe9654b06418a/artifacts
+end_time: 1740737143490
+entry_point_name: ''
+experiment_id: '792343670882321621'
+lifecycle_stage: active
+run_id: 31ccb4d910d14eb6a4efe9654b06418a
+run_name: salty-calf-264
+run_uuid: 31ccb4d910d14eb6a4efe9654b06418a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740737141352
+status: 3
+tags: []
+user_id: amena

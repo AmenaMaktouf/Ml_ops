@@ -1,0 +1,15 @@
+artifact_uri: file:///home/amena/maktouf-amena-4DS5-mlops_projet/mlruns/792343670882321621/1c08cec419cd4862804c6f578ffa4ee5/artifacts
+end_time: 1740738988326
+entry_point_name: ''
+experiment_id: '792343670882321621'
+lifecycle_stage: active
+run_id: 1c08cec419cd4862804c6f578ffa4ee5
+run_name: unruly-shark-883
+run_uuid: 1c08cec419cd4862804c6f578ffa4ee5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740738988262
+status: 4
+tags: []
+user_id: amena

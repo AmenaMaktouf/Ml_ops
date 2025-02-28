@@ -1,0 +1,15 @@
+artifact_uri: file:///home/amena/maktouf-amena-4DS5-mlops_projet/mlruns/792343670882321621/acdd08ef4b6948f3b33c04190c1c629a/artifacts
+end_time: 1740737527130
+entry_point_name: ''
+experiment_id: '792343670882321621'
+lifecycle_stage: active
+run_id: acdd08ef4b6948f3b33c04190c1c629a
+run_name: delicate-duck-771
+run_uuid: acdd08ef4b6948f3b33c04190c1c629a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740737524988
+status: 3
+tags: []
+user_id: amena

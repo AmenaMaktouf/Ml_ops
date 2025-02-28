@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prédiction de Désabonnement</title>
+    
+    <!-- Lien vers votre fichier CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <!-- Ajout d'une police Google pour un design plus agréable -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Prédiction de Désabonnement</h1>
+        
+        <!-- Formulaire de saisie -->
+        <form method="POST">
+            <fieldset>
+                <legend>Informations Client</legend>
+
+                <label for="account_length">Durée du Compte :</label>
+                <input type="number" step="0.01" name="account_length" required>
+
+                <label for="international_plan">Plan International (0/1) :</label>
+                <input type="number" name="international_plan" min="0" max="1" required>
+
+                <label for="voice_mail_plan">Plan Messagerie Vocale (0/1) :</label>
+                <input type="number" name="voice_mail_plan" min="0" max="1" required>
+
+                <label for="number_vmail_messages">Nombre de Messages Vocaux :</label>
+                <input type="number" step="0.01" name="number_vmail_messages" required>
+
+                <label for="total_day_minutes">Minutes en Journée :</label>
+                <input type="number" step="0.01" name="total_day_minutes" required>
+
+                <label for="total_day_calls">Appels en Journée :</label>
+                <input type="number" step="0.01" name="total_day_calls" required>
+
+                <label for="total_day_charge">Coût Journée :</label>
+                <input type="number" step="0.01" name="total_day_charge" required>
+
+                <label for="total_eve_minutes">Minutes en Soirée :</label>
+                <input type="number" step="0.01" name="total_eve_minutes" required>
+
+                <label for="total_eve_calls">Appels en Soirée :</label>
+                <input type="number" step="0.01" name="total_eve_calls" required>
+
+                <label for="total_night_minutes">Minutes la Nuit :</label>
+                <input type="number" step="0.01" name="total_night_minutes" required>
+
+                <label for="total_night_calls">Appels la Nuit :</label>
+                <input type="number" step="0.01" name="total_night_calls" required>
+
+                <label for="total_intl_minutes">Minutes Internationales :</label>
+                <input type="number" step="0.01" name="total_intl_minutes" required>
+
+                <label for="total_intl_calls">Appels Internationaux :</label>
+                <input type="number" step="0.01" name="total_intl_calls" required>
+
+                <label for="customer_service_calls">Appels au Service Client :</label>
+                <input type="number" step="0.01" name="customer_service_calls" required>
+
+                <button type="submit">Soumettre</button>
+            </fieldset>
+        </form>
+
+        <!-- Affichage du résultat avec une mise en valeur -->
+        {% if prediction is not none %}
+            {% set pred_int = prediction|int %}
+            <div class="result">
+                <h2>Résultat de la Prédiction :</h2>
+                <p>
+                    <strong>{{ pred_int }}</strong> 
+                    {% if pred_int == 0 %}
+                        - Le client est <span class="safe">peu susceptible</span> de se désabonner.
+                    {% elif pred_int == 1 %}
+                        - Le client est <span class="alert">susceptible</span> de se désabonner.
+                    {% else %}
+                        - <span class="warning">Valeur inattendue.</span>
+                    {% endif %}
+                </p>
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- Lien vers votre fichier JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+

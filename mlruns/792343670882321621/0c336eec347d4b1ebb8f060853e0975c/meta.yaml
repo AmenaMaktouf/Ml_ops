@@ -1,0 +1,15 @@
+artifact_uri: file:///home/amena/maktouf-amena-4DS5-mlops_projet/mlruns/792343670882321621/0c336eec347d4b1ebb8f060853e0975c/artifacts
+end_time: 1740737527146
+entry_point_name: ''
+experiment_id: '792343670882321621'
+lifecycle_stage: active
+run_id: 0c336eec347d4b1ebb8f060853e0975c
+run_name: luminous-whale-620
+run_uuid: 0c336eec347d4b1ebb8f060853e0975c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740737527131
+status: 3
+tags: []
+user_id: amena

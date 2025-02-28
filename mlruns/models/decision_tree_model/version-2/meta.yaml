@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1740738343225
+current_stage: None
+description: ''
+last_updated_timestamp: 1740738343225
+name: decision_tree_model
+run_id: eec0b1a87d9b4f0d8d37b8f6213109c4
+run_link: ''
+source: file:///home/amena/maktouf-amena-4DS5-mlops_projet/mlruns/792343670882321621/eec0b1a87d9b4f0d8d37b8f6213109c4/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///home/amena/maktouf-amena-4DS5-mlops_projet/mlruns/792343670882321621/eec0b1a87d9b4f0d8d37b8f6213109c4/artifacts/model
+user_id: null
+version: 2
