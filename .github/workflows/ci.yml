@@ -24,6 +24,12 @@ jobs:
       - name: Install Make
         run: sudo apt-get update && sudo apt-get install -y make
 
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install black  # Installation de black pour vérifier la qualité du code
+
       - name: Run Makefile pipeline
         run: |
           make setup
@@ -32,4 +38,3 @@ jobs:
           make train
           make test
           make evaluate
-
