@@ -1,4 +1,3 @@
-
 name: ML Model CI/CD
 
 on:
@@ -26,12 +25,10 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           pip install -r requirements.txt
-
       - name: Preprocess data
         run: |
           source venv/bin/activate
           python model_pipeline.py data_prepare
-
   train:
     runs-on: ubuntu-latest
     needs: prepare
@@ -49,13 +46,11 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           pip install -r requirements.txt
-
       - name: Train model
         run: |
           source venv/bin/activate
           python model_pipeline.py train_model
-
-  test:
+  evaluate:
     runs-on: ubuntu-latest
     needs: train
     steps:
@@ -72,12 +67,13 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           pip install -r requirements.txt
-
-
-
+      - name: Run tests
+        run: |
+          source venv/bin/activate
+          python model_pipeline.py evaluate_model
   notify:
     runs-on: ubuntu-latest
-    needs: test
+    needs: evaluate
     steps:
       - name: Send notification
         run: |
