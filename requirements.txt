@@ -9,4 +9,5 @@ joblib
 pytest
 pylint  # Manquant pour la vérification du code
 imblearn  # Manquant pour SMOTEENN
+black
 mlflow
