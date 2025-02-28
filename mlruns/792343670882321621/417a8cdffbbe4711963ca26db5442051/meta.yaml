@@ -1,0 +1,15 @@
+artifact_uri: file:///home/amena/maktouf-amena-4DS5-mlops_projet/mlruns/792343670882321621/417a8cdffbbe4711963ca26db5442051/artifacts
+end_time: 1740772475181
+entry_point_name: ''
+experiment_id: '792343670882321621'
+lifecycle_stage: active
+run_id: 417a8cdffbbe4711963ca26db5442051
+run_name: polite-dog-90
+run_uuid: 417a8cdffbbe4711963ca26db5442051
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740772472692
+status: 3
+tags: []
+user_id: amena

@@ -32,6 +32,11 @@ jobs:
         ./venv/bin/pip install --upgrade pip  # Mise à jour de pip dans l'environnement virtuel
         ./venv/bin/pip install -r requirements.txt  # Installation des dépendances dans l'environnement virtuel
 
+    - name: Set up working directory for MLflow
+      run: |
+        mkdir -p /tmp/mlruns  # Créez un répertoire pour MLflow
+        chmod -R 777 /tmp/mlruns  # Donne les permissions d'écriture
+
     - name: Start MLflow server
       run: |
         nohup mlflow ui --host 0.0.0.0 --port 5000 &  # Démarrage du serveur MLflow en arrière-plan

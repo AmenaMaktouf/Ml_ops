@@ -4,9 +4,16 @@ import mlflow
 import mlflow.sklearn
 from mlflow.models import infer_signature
 from model_pipeline import prepare_data, train_model, save_model, evaluate_model
+import os
+
+# Assurez-vous que le répertoire de MLflow existe et a les bonnes permissions
+mlflow.set_tracking_uri("file:///tmp/mlruns")  # Utilisez un répertoire avec les bonnes permissions
+
+if not os.path.exists("/tmp/mlruns"):
+    os.makedirs("/tmp/mlruns", exist_ok=True)  # Créez le répertoire s'il n'existe pas
+    os.chmod("/tmp/mlruns", 0o777)  # Donne les permissions d'écriture
 
 # Configuration MLflow
-mlflow.set_tracking_uri("http://localhost:5000")  # Port par défaut
 mlflow.set_experiment("Prediction_Churn_ML")
 
 class MLPipeline:
