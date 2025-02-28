@@ -32,22 +32,24 @@ jobs:
         ./venv/bin/pip install --upgrade pip  # Mise à jour de pip dans l'environnement virtuel
         ./venv/bin/pip install -r requirements.txt  # Installation des dépendances dans l'environnement virtuel
 
-    - name: Run Makefile prepare
+    - name: Prepare data
       run: |
-        make prepare  # Préparation des données
+        ./venv/bin/python main.py --prepare  # Préparation des données
 
-    - name: Run Makefile train
+    - name: Train model
       run: |
-        make train  # Entraînement du modèle
+        ./venv/bin/python main.py --train  # Entraînement du modèle
 
-    - name: Run Makefile evaluate
+    - name: Evaluate model
       run: |
-        make evaluate  # Évaluation du modèle
+        ./venv/bin/python main.py --evaluate  # Évaluation du modèle
 
     - name: Run tests
       run: |
-        make test  # Exécution des tests unitaires
+        ./venv/bin/python -m pytest tests/  # Exécution des tests unitaires
 
     - name: Clean up
       run: |
-        make clean  # Nettoyage des fichiers temporaires et environnement
+        rm -rf venv  # Nettoyage de l'environnement virtuel
+        rm -f model.pkl scaler.pkl pca.pkl  # Suppression des modèles sauvegardés
+        rm -rf __pycache__ .pytest_cache .pylint.d  # Suppression des fichiers temporaires
