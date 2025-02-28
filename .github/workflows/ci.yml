@@ -32,6 +32,11 @@ jobs:
         ./venv/bin/pip install --upgrade pip  # Mise à jour de pip dans l'environnement virtuel
         ./venv/bin/pip install -r requirements.txt  # Installation des dépendances dans l'environnement virtuel
 
+    - name: Start MLflow server
+      run: |
+        nohup mlflow ui --host 0.0.0.0 --port 5000 &  # Démarrage du serveur MLflow en arrière-plan
+        sleep 5  # Attente pour que le serveur démarre
+
     - name: Prepare data
       run: |
         ./venv/bin/python main.py --prepare  # Préparation des données
